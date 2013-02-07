@@ -15,10 +15,10 @@ What runs in Gecko is Gaia. This is the full UI for the device. Since the runtim
 ## Key URLs
 
 - Gaia
-  - Source: https://github.com/mozilla-b2g/gaia
+  - Source code: https://github.com/mozilla-b2g/gaia
   - Bug tracker: https://bugzilla.mozilla.org/buglist.cgi?product=Boot2Gecko;component=Gaia;resolution=---;list_id=5625662
   - Forum: https://groups.google.com/forum/?fromgroups#!forum/mozilla.dev.gaia
 - B2G
   - Nightly builds: http://ftp.mozilla.org/pub/mozilla.org/b2g/nightly/latest-mozilla-central/
-  - Source: https://github.com/mozilla-b2g/B2G
+  - Source code: https://github.com/mozilla-b2g/B2G
   - Forum: https://groups.google.com/forum/?fromgroups#!forum/mozilla.dev.b2g
