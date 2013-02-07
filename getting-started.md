@@ -84,3 +84,11 @@ optional tour. After that, you're in. Some tips for navigating in B2G desktop:
     +-------------------+-------------------------+---------------+
 
 *(source: https://wiki.mozilla.org/Gaia/Hacking#Simulating_Hardware_Buttons)*
+
+## `b2g` vs. `b2g-bin`
+
+The `b2g` executable uses the default profile that ships with Boot 2 Gecko
+itself. This makes it unsuitable for Gaia development. The `b2g-bin` executable
+uses the profile specified on the command line (see above).
+
+*(source: https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Using_the_B2G_desktop_client#Running_on_Linux)*
