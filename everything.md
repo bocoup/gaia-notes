@@ -95,7 +95,7 @@ DEBUG=1 make
 
 Fire up `b2g-bin` with your gaia profile. Once you've unlocked the screen in B2G desktop, open up the `Settings` App. The remote debugging is burried in `Settings > Device Information > More Information > Developer` and a toggle is present for `Remote Debugging`. Enable it. 
 
-In Firefox, connect to the B2G desktop application by choosing `Connect...` in the `Tools > Web Developer` menu. Connect to `localhost` on port `6000` and you're all set!
+In Firefox, connect to the B2G desktop application by choosing `Connect...` in the `Tools > Web Developer` menu. Connect to `localhost` on port `6000` and you're all set! If you don't see `Connect`, turn on remote debugging in Firefox in `about:config` and toggle `devtools.debugger.remote-enabled` to true.
 
 ### Asides
 
