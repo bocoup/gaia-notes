@@ -74,7 +74,13 @@ So this should load B2G and start your profile for the first time. You'll
 probably get the welcoming questions like language and time-zone, as well as an
 optional tour. After that, you're in. Some tips for navigating in B2G desktop:
 
-Home button: Home key (fn + ← on newer Mac Keyboards)
-Power button: End key (fn + → on newer Mac Keyboards)
-Volume button: Page Up/Down keys (fn + ↑/↓ on newer Mac Keyboards)
-Open Cards View: long press to Home key (cmd + fn + ← on newer Mac Keyboards)
+    +-------------------+-------------------------+---------------+
+    | Button            | Window/Linux            | Mac           |
+    +-------------------+-------------------------+---------------+
+    | Home              | Home key                | fn + ←        |
+    | Power             | End                     | fn + →        |
+    | Volume            | Page Up/Page Down       | fn + ↑/↓      |
+    | Open Cards View   | Long press to Home Key  | cmd + fn + ←  |
+    +-------------------+-------------------------+---------------+
+
+*(source: https://wiki.mozilla.org/Gaia/Hacking#Simulating_Hardware_Buttons)*
