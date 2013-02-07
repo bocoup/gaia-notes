@@ -62,7 +62,7 @@ b2g-bin -profile /path/to/gaia/profile
 ```
 
 Note: `b2g-bin` requires that the path you give it to profile be a complete
-one. That means either one based off of the roo of the drive like
+one. That means either one based off of the root of the drive like
 `/path/to/gaia` or based off of your home folder `~/path/to/gaia`. A path like
 `../gaia/profile` will fail. 
 
