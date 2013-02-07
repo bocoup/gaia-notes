@@ -12,10 +12,13 @@ Gonk runs gecko, which is ported for use on Gonk. Just like gecko for OSX potent
 
 What runs in Gecko is Gaia. This is the full UI for the device. Since the runtime is Gecko, Gaia is fully HTML/CSS/JavaScript and uses the APIs Gecko provides by the device/Gonk. There are also some special considerations regarding sandboxing apps and interapp communication, but those will be addressed later. 
 
-## Code Locations
+## Key URLs
 
 - Gaia
-  - source: https://github.com/mozilla-b2g/gaia
+  - Source: https://github.com/mozilla-b2g/gaia
+  - Bug tracker: https://bugzilla.mozilla.org/buglist.cgi?product=Boot2Gecko;component=Gaia;resolution=---;list_id=5625662
+  - Forum: https://groups.google.com/forum/?fromgroups#!forum/mozilla.dev.gaia
 - B2G
-  - nightly builds: http://ftp.mozilla.org/pub/mozilla.org/b2g/nightly/latest-mozilla-central/
-  - source: https://github.com/mozilla-b2g/B2G
+  - Nightly builds: http://ftp.mozilla.org/pub/mozilla.org/b2g/nightly/latest-mozilla-central/
+  - Source: https://github.com/mozilla-b2g/B2G
+  - Forum: https://groups.google.com/forum/?fromgroups#!forum/mozilla.dev.b2g
