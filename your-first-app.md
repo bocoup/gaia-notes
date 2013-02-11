@@ -120,3 +120,4 @@ That should instantly update your app.
 
 (TODO: figure out how to update an app! Right now I'm deleting and reinstalling.)
 https://developer.mozilla.org/en-US/docs/Apps/Updating_apps
+TODO: appcache stuff
