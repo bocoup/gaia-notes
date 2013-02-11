@@ -83,7 +83,7 @@ Now you get to install it! Launch B2G Desktop, or Firefox OS Simulator, or proba
 
 Then click 'Install!' and it should prompt you to install the app. Run the app and voila, there it is!
 
-What's happening here is the install link runs this script:
+What's happening here is the install link runs this script (modified from [this tutorial app](https://github.com/darkwing/html5apptut/blob/master/installer.html)):
 
 ```javascript
 function install() {
