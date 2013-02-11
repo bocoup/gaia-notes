@@ -22,3 +22,5 @@ What runs in Gecko is Gaia. This is the full UI for the device. Since the runtim
   - Nightly builds: http://ftp.mozilla.org/pub/mozilla.org/b2g/nightly/latest-mozilla-central/
   - Source code: https://github.com/mozilla-b2g/B2G
   - Forum: https://groups.google.com/forum/?fromgroups#!forum/mozilla.dev.b2g
+- Both
+  - How bug triage works: https://wiki.mozilla.org/B2G/Triage
