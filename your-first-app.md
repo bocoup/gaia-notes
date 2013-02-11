@@ -1,11 +1,7 @@
 # Your First App
 This guide shows you how to build and deploy a simple client-only Firefox OS application, to be installed from a third party source (AKA your Github Pages account and not the Marketplace). This guide assumes you have npm and a github account, as well as a working installation of B2G. You do _not_ need to be able to compile Gaia to get a third party app up and running.
 
-This is a modified version of [Mozilla's weather app tutorial](https://developer.mozilla.org/en-US/docs/Apps/Tutorials/Weather_app_tutorial).
-
-The overall steps for this tutorial are:
-
-* Fork the example repo and clone it. 
+This is a modified version of [Mozilla's weather app tutorial](https://developer.mozilla.org/en-US/docs/Apps/Tutorials/Weather_app_tutorial). It's really not too different except it includes instructions on how to actually install your app!
 
 ## Fork the example repo and clone it
 
