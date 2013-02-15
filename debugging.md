@@ -48,6 +48,22 @@ the `Tools > Web Developer` menu. Connect to `localhost` on port `6000` and
 you're all set! If you don't see `Connect`, turn on remote debugging in Firefox
 in `about:config` and toggle `devtools.debugger.remote-enabled` to true.
 
+Once you've hit `Connect` in Firefox, you should see a prompt in B2G Desktop that
+asks if you want to allow the debugger to connect. Allow it, and then go back to Firefox.
+There should now be `chrome://browser/content/shell.xul` visible on the Connect page,
+which you'll click to get a console.
+
+A good query to test the console is to make sure B2G is on the homescreen (where the clock/date
+appear). Enter the following:
+
+```
+document.childNodes[0].children[4].contentDocument.activeElement.contentDocument.querySelector("#landing-date").innerHTML
+```
+
+That should give you today's date as displayed on the homescreen. (So `document.childNodes[0].children[4].contentDocument.activeElement.contentDocument`
+is the context of the active application that is currently on the screen, and you can go from there.)
+Note that if you inspect an object, its inspection window may appear behind the console itself.
+
 ## Asides
 
 If you need to change the port for some reason (you already are using a service
@@ -80,3 +96,4 @@ XXXX);` where XXXX is the port number.
 * console!
 * make sure you're on your home screen
 * try: ```document.childNodes[0].querySelector("#homescreen");``` -- should return an Iframe element. if you click on the Iframe element it will launch an object inspector BEHIND the console window, feh
+* also, while on the homescreen, try: ```document.childNodes[0].children[4].contentDocument.activeElement.contentDocument.querySelector("#landing-date").innerHTML``` -- this should give ou the date as displayed on the homescreen
