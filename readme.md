@@ -8,7 +8,7 @@ FirefoxOS (or B2G - Boot To Gecko) is comprised of three core pieces. Gonk, Gaia
 
 Gonk is the core of the OS, consisting of a linux kernel and HAL layer (parts of which are shared with android for things like Camera, GPS, etc).
 
-Gonk runs gecko, which is ported for use on Gonk. Just like gecko for OSX potentially has access to specific things like an accellerometer, Gecko has access to all of Gonk's unique features like the telephony stack, the GPS, and everything else unique about the device. 
+Gonk runs gecko, which is ported for use on Gonk. Just like gecko for OS X potentially has access to specific things like an accelerometer, Gecko has access to all of Gonk's unique features like the telephony stack, the GPS, and everything else unique about the device. 
 
 What runs in Gecko is Gaia. This is the full UI for the device. Since the runtime is Gecko, Gaia is fully HTML/CSS/JavaScript and uses the APIs Gecko provides by the device/Gonk. There are also some special considerations regarding sandboxing apps and interapp communication, but those will be addressed later. 
 
