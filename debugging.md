@@ -42,6 +42,30 @@ DEBUG=1 make
 
 ## Get your hands dirty
 
+### Using FireFox 18
+
+To work on a specific application, it may be preferable to work in FireFox 18.
+This provides access to FireFox's full suite of developer tools, operating in
+the context of the application.
+
+To use FireFox 18, run the application from the command line, specifying the
+absolute path to your Gaia profile as follows:
+
+    $ /path/to/firefox-18 -profile /absolute/path/to/gaia/profile/
+
+Next, navigate to the application's URL. Application URLs are structured as
+follows:
+
+    http://{ application name }.gaiamobile.org:8080/
+
+For example, the home screen application can be accessed by visiting:
+
+    http://homescreen.gaiamobile.org:8080/
+
+### Using B2G-Desktop
+
+B2G-Desktop is necessary to facilate development across applications.
+
 Fire up `b2g-bin` with your gaia profile. Once you've unlocked the screen in
 B2G desktop, open up the `Settings` App. The remote debugging is burried in
 `Settings > Device Information > More Information > Developer` and a toggle is
