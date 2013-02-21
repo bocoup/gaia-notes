@@ -6,8 +6,8 @@ Here's how you do it.
 ## The Dev Tools
 
 Make sure you have [Firefox
-Aurora](http://www.mozilla.org/en-US/firefox/aurora/) or [Firefox
-Nightly](http://nightly.mozilla.org/) for the latest Dev Tools stuff. If you're
+Aurora](http://www.mozilla.org/en-US/firefox/aurora/) <del>or [Firefox
+Nightly](http://nightly.mozilla.org/)</del>\* for the latest Dev Tools stuff. If you're
 curious how to run Firefox stable and Firefox Aurora together, check out how to
 [add and manage
 profiles](https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles).
@@ -16,6 +16,10 @@ to open when Firefox starts.
 
 Once you have it installed, open `about:config` and change the
 `devtools.debugger.remote-enabled` setting to true.
+
+\* - *FireFox Nightly is currently suffering a regression that makes it
+unsuitable for Gaia development. See [Bug
+841711](https://bugzilla.mozilla.org/show_bug.cgi?id=841711).*
 
 ## Configuration
 
