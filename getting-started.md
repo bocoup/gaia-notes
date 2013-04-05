@@ -17,7 +17,8 @@ extracted the nightly file. In MacOS, it's in
 `/Applications/B2G.app/Contents/MacOS/b2g-bin`. Do yourself a favor and add
 that to your $PATH - either in your `.bashrc` or `.bash_profile` depending on
 your setup. Linux users, too. If you don't know how to do this, google "linux
-add to PATH" or "osx add to PATH". Moving foward, this document will assume
+add to PATH" or "osx add to PATH". On OSX I had to add the directory to my Path,
+not b2g-bin itself. Moving foward, this document will assume
 you've done this. If you haven't, you can replace `b2g-bin` with the full path. 
 
 So, now, you should be able to run `b2g-bin` and see a small, black window
@@ -43,6 +44,9 @@ yourprojectdirectory/
 
 This is similar, except the `dmg` comes as an app. Once you've mounted the
 `dmg`, you can drag it to your `Applications` folder.
+
+To build Gaia on OSX, you'll need to install XCode then go to the preferences and
+install the Command Line Tools component.
 
 ## Building Gaia
 
