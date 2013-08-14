@@ -1,16 +1,14 @@
 # Setting Up Your Environment
 
-1. Fork and Clone 
-    - Relevant Repos
-      - https://github.com/mozilla-b2g/B2G
-      - https://github.com/mozilla-b2g/gaia
-    - Inside each clone, add the upstream:
-
-`git remote add upstream https://github.com/mozilla-b2g/B2G`
-`git remote add upstream https://github.com/mozilla-b2g/gaia`
-    
-    - Make remotes for bocoup team members
-      - https://gist.github.com/rwldrn/6185286
+1. Fork and clone B2G and gaia
+    - Relevant repos:
+        - https://github.com/mozilla-b2g/B2G
+        - https://github.com/mozilla-b2g/gaia
+    - Add the upstreams:
+        - `git remote add upstream https://github.com/mozilla-b2g/B2G`
+        - `git remote add upstream https://github.com/mozilla-b2g/gaia`
+    - In gaia, make remotes for bocoup team members
+        - https://gist.github.com/rwldrn/6185286
 
 
 2. Download and install Firefox Nightly
@@ -22,9 +20,9 @@
 
 
 3. Copy Corey's .dotfiles/b2g.sh
-    - make sure to update paths as needed (check for absolute paths to firefox)
+    - Make sure to update paths as needed (check for absolute paths to firefox)
     - https://github.com/gnarf/.dotfiles/blob/master/b2g.sh
-    - don't worry about B2G paths for right now
+    - Don't worry about B2G paths for right now
 
 
 4. Get and setup the latest b2g18
@@ -32,26 +30,24 @@
     - Build process: https://github.com/mozilla-b2g/B2G/blob/master/README.md 
     - TODO: write a little script to check for the dependencies
     - Corey needs your public key for this to work (same place you get it for github, usually `~/.ssh`)
-```bash
-cd path/to/B2G; 
+        ```bash
+        % cd path/to/B2G; 
 
-scp nightly@cloud.gnarf.net:b2g18.tgz .
-```
-
+        % scp nightly@cloud.gnarf.net:b2g18.tgz .
+        ```
     - Once that's downloaded, extract the contents. This will create a dir called "b2g18", which contains a dir called "out"
     - Copy the downloaded and extracted b2g18/out dir to your B2G/ dir:
-```bash
-cd path/to/B2G;
+        ```bash
+        % cd path/to/B2G;
 
-cp -r b2g18/out out;
-```
-
+        % cp -r b2g18/out out;
+        ```
     - Following the update of b2g18 (download or build), run the following: 
-```bash
-cd path/to/B2G;
+        ```bash
+        % cd path/to/B2G;
 
-./flash.sh;
-```
+        % ./flash.sh;
+        ```
 
 # Deploying and Testing
 
