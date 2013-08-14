@@ -13,23 +13,23 @@
 
 2. Download and install Firefox Nightly
     - http://nightly.mozilla.org/
-    - https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/
-    - If you need to go back to a known good build for nightly: 
+    - If you need to go back to a known good build for nightly:
+        - https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/
         - Look for folders ending in "mozilla-central"
         - eg. https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2013-07-19-03-02-04-mozilla-central/
 
 
 3. Copy Corey's .dotfiles/b2g.sh
-    - Make sure to update paths as needed (check for absolute paths to firefox)
     - https://github.com/gnarf/.dotfiles/blob/master/b2g.sh
+    - Make sure to update paths as needed (check for absolute paths to firefox)
     - Don't worry about B2G paths for right now
 
 
-4. Get and setup the latest b2g18
+4. Get and setup the latest b2g18 (i.e. Flashing the phone)
     - ONLY THE FIRST TIME...
-    - Build process: https://github.com/mozilla-b2g/B2G/blob/master/README.md 
+        - Build process: https://github.com/mozilla-b2g/B2G/blob/master/README.md 
     - TODO: write a little script to check for the dependencies
-    - Corey needs your public key for this to work (same place you get it for github, usually `~/.ssh`)
+    - Send Corey your public key for this to work (same place you get it for github, usually `~/.ssh`)
         ```bash
         % cd path/to/B2G; 
 
