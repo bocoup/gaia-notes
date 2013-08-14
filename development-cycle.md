@@ -41,118 +41,105 @@
 
 To flash the phone, you need to get and setup the latest b2g18.
 
-0. ONLY THE FIRST TIME...
-    - Build process: https://github.com/mozilla-b2g/B2G/blob/master/README.md 
+0. **ONLY THE FIRST TIME**
+    - Build process: https://github.com/mozilla-b2g/B2G/blob/master/README.md
     - TODO: write a little script to check for the dependencies
-1. Send Corey your public key for this to work (same place you get it for github, usually `~/.ssh`)
-        ```bash
-        % cd path/to/B2G;
+1. Send Corey your public key for this to work (same place you get it for github, usually `~/.ssh`)  
 
-        % scp nightly@cloud.gnarf.net:b2g18.tgz .
-        ```
-2. Extract the contents of b2g18.tgz. This will create a dir called "b2g18", which contains a dir called "out"
-3. Copy the downloaded and extracted b2g18/out dir to your B2G/ dir:
-        ```bash
-        % cd path/to/B2G;
+        cd path/to/B2G
+        scp nightly@cloud.gnarf.net:b2g18.tgz .
+        
+2. Extract the contents of b2g18.tgz. This will create a dir called `b2g18`, which contains a dir called `out`.
+3. Copy the downloaded and extracted `b2g18/out` dir to your `B2G/` dir:  
 
-        % cp -r b2g18/out out;
-        ```
-4. Following the update of b2g18 (download or build), run the following: 
-        ```bash
-        % cd path/to/B2G;
+        cd path/to/B2G
+        cp -r b2g18/out out
+        
+4. Following the update of b2g18 (download or build), run the following:  
 
-        % ./flash.sh;
-        ```
+        cd path/to/B2G
+        ./flash.sh
 
 ### Deploying and Testing
 
 
-1. Pushing To Device
+#### Grab the latest from master
 
 ```bash
-cd path/to/gaia;
-
-git checkout master; git pull upstream master;
+cd path/to/gaia
+git checkout master
+git pull upstream master
 ```
 
-Tutorial Time!
+#### Make a change and test locally
 
-```bash
-git checkout -b busted;
-```
+1. Check out a new branch
 
-Open editor, navigate to apps/clock/js
+        git checkout -b busted
 
-Open clock_view.js
+2. Open editor, navigate to apps/clock/js
+3. Open clock_view.js
+4. Break something in the file, for example: comment out a big chunk of code
+5. Make a debug profile
 
-Break something
+        make DEBUG=1
+        
+6. Launch Firefox Nightly with the newly created debug profile
+        
+        gaia-test
 
-```bash
-make DEBUG=1; gaia-test;
-```
-
-This will open FireFox Nightly, displaying the "test-agent"
-
-Open the Console, uncheck the following noisy as hell items:
-    
+7. This will open FireFox Nightly, displaying the "test-agent"
+8. Open the Console, uncheck the following noisy as hell items
     - Network
     - CSS
     - Security
-    -  
-    
+
+#### Push change to the phone
 ```bash
 make install-gaia APP=clock;
 ```
 
-View logging from device!
+#### View logging from device!
 ```bash
 adb-console;
 ```
 
-Useful functions...
+#### Useful debugging functions you can make
 
-```bash
-touch shared/js/serialize.js
-```
+1. Create a serialize.js
 
-put this inside:
+        touch shared/js/serialize.js
+
+2. Put this inside:
     
-```js    
-function serialize(object, omission) {
-  var o = {};
-  if (Array.isArray(object)) {
-    return JSON.stringify(object);
-  }
-  omission = omission || [];
-  for (var p in object) {
-    if (omission.indexOf(p) === -1) {
-      o[p] = object[p];
-    }
-  }
-  return JSON.stringify(o);
-}
+        function serialize(object, omission) {
+          var o = {};
+          if (Array.isArray(object)) {
+            return JSON.stringify(object);
+          }
+          omission = omission || [];
+          for (var p in object) {
+            if (omission.indexOf(p) === -1) {
+              o[p] = object[p];
+            }
+          }
+          return JSON.stringify(o);
+        }
+        
+        function log(object, omission) {
+          console.log(serialize(object, omission));
+        }
 
-function log(object, omission) {
-  console.log(serialize(object, omission));
-}
-```
+3. In apps/clock/index.html insert: `<script src="shared/js/serialize.js"></script>`
+4. In clock_view.js (anywhere, but the bottom seems convenient):
 
-then, in apps/clock/index.html...
-
-<script src="shared/js/serialize.js"></script>
-
-
-Inside of clock_view.js (anywhere, but the bottom seems convenient):
-
-```js
-var o = { foo: [1,2,3,4], bar: document.createElement('div') };
-log(o, ['bar']);
-```
+        var o = { foo: [1,2,3,4], bar: document.createElement('div') };
+        log(o, ['bar']);
 
 
 ### General Notes About Branches and Bugs
 
-Branch names should only be the bug number (easy of remembering and ease of pulling through CLI).  This also helps enforce mapping bugs to PRs.
+Branch names should only be the bug number (ease of remembering and ease of pulling through CLI).  This also helps enforce mapping bugs to PRs.
 
 e.g. `git pull rwaldron 12345`
 
@@ -160,7 +147,7 @@ e.g. `git pull rwaldron 12345`
 
 Master branch changes constantly (many, many times a day). a patch which could take 2 hours might find master branch changes underneath you.
 
-From working branch:
+From working branch (e.g. `busted`):
 
 1. First attempt to rebase
 
