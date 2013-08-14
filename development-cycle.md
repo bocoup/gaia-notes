@@ -24,8 +24,9 @@
     - Make sure to update paths as needed (check for absolute paths to firefox)
     - Don't worry about B2G paths for right now
 
+# Flashing the phone
 
-4. Get and setup the latest b2g18 (i.e. Flashing the phone)
+1. Get and setup the latest b2g18 (i.e. )
     - ONLY THE FIRST TIME...
         - Build process: https://github.com/mozilla-b2g/B2G/blob/master/README.md 
     - TODO: write a little script to check for the dependencies
