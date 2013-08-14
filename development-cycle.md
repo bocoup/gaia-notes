@@ -1,14 +1,14 @@
 1. Fork and Clone 
     - Relevant Repos
-        - https://github.com/mozilla-b2g/B2G
-        - https://github.com/mozilla-b2g/gaia
-    - Inside each clone, add the upstream
+      - https://github.com/mozilla-b2g/B2G
+      - https://github.com/mozilla-b2g/gaia
+    - Inside each clone, add the upstream:
 
 `git remote add upstream https://github.com/mozilla-b2g/B2G`
 `git remote add upstream https://github.com/mozilla-b2g/gaia`
     
     - Make remotes for bocoup team members
-        - https://gist.github.com/rwldrn/6185286
+      - https://gist.github.com/rwldrn/6185286
 
 
 2. Download and install Firefox Nightly
