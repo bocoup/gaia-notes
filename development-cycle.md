@@ -12,7 +12,7 @@
 
 
 2. Download and install Firefox Nightly
-    - http://nightly.mozilla.org/
+    - (http://nightly.mozilla.org/)[http://nightly.mozilla.org/]
     - https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/
     - If you need to go back to a known good build for nightly: 
         - Look for folders ending in "mozilla-central"
