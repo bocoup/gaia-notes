@@ -13,6 +13,7 @@
 
 2. Download and install Firefox Nightly
     - http://nightly.mozilla.org/
+    - Copy your absolute path to the Firefox Nightly application for step 3 below
     - If you need to go back to a known good build for nightly:
         - https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/
         - Look for folders ending in "mozilla-central"
@@ -21,7 +22,7 @@
 
 3. Copy Corey's .dotfiles/b2g.sh
     - https://github.com/gnarf/.dotfiles/blob/master/b2g.sh
-    - Make sure to update paths as needed (check for absolute paths to firefox)
+    - Make sure to update paths as needed (check for absolute paths to Firefox Nightly)
     - Don't worry about B2G paths for right now
 
 # Flashing the phone
