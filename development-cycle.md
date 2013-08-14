@@ -156,10 +156,12 @@ git checkout -b busted-r1
 git pull --rebase upstream master
 ```
 
-if no conflicts -->
+2a. If no conflicts -->
 
 ```bash
 git checkout busted
 git pull --rebase upstream master
 git branch -D busted-r1
 ```
+
+2b. If conflicts, work them out with the other developer and repeat above
