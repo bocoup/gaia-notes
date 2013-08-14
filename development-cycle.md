@@ -1,3 +1,5 @@
+# Setting Up Your Environment
+
 1. Fork and Clone 
     - Relevant Repos
       - https://github.com/mozilla-b2g/B2G
@@ -50,6 +52,9 @@ cd path/to/B2G;
 
 ./flash.sh;
 ```
+
+# Deploying and Testing
+
 
 5. Getting ADB
     - http://developer.android.com/sdk/index.html
