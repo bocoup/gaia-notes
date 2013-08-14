@@ -6,8 +6,8 @@
       - https://github.com/mozilla-b2g/gaia
     - Inside each clone, add the upstream:
 
-`git remote add upstream https://github.com/mozilla-b2g/B2G`
-`git remote add upstream https://github.com/mozilla-b2g/gaia`
+        `git remote add upstream https://github.com/mozilla-b2g/B2G`
+        `git remote add upstream https://github.com/mozilla-b2g/gaia`
     
     - Make remotes for bocoup team members
       - https://gist.github.com/rwldrn/6185286
