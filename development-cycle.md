@@ -145,7 +145,7 @@ e.g. `git pull rwaldron 12345`
 
 ### Rebasing
 
-Master branch changes constantly (many, many times a day). a patch which could take 2 hours might find master branch changes underneath you.
+Master branch changes constantly (many, many times a day). A patch which could take 2 hours might find master branch changes underneath you.
 
 From working branch (e.g. `busted`):
 
