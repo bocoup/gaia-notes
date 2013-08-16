@@ -8,34 +8,40 @@
         - `git remote add upstream https://github.com/mozilla-b2g/B2G`
         - `git remote add upstream https://github.com/mozilla-b2g/gaia`
     - In gaia, make remotes for bocoup team members
-        - https://gist.github.com/rwldrn/6185286
+        - [example script](https://github.com/bocoup/gaia-notes/blob/master/gaia_remotes.sh)
 2. Download and install Firefox Nightly
     - http://nightly.mozilla.org/
     - Copy your absolute path to the Firefox Nightly application for step 3 below
     - If you need to go back to a known good build for nightly:
-        - https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/
+        - Go to the nightly [FTP trunk](https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/)
         - Look for folders ending in "mozilla-central"
         - eg. https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2013-07-19-03-02-04-mozilla-central/
 3. Copy Corey's .dotfiles/b2g.sh
     - https://github.com/gnarf/.dotfiles/blob/master/b2g.sh
-    - Make sure to update paths as needed (check for absolute paths to Firefox Nightly)
+        - Contains aliases for testing and running gaia in nightly
+    - Make sure to update paths as needed:
+        - check for absolute paths to Firefox Nightly
+        - replace `gnarf` as needed, of course.
     - Don't worry about B2G paths for right now
 4. Get Android Developer Tools
     - Windows or OSX
         - http://developer.android.com/sdk/index.html
+        - On OS X you can download the sdk and add the `package-tools` folders to your path in order to get [adb](http://developer.android.com/tools/help/adb.html). 
     - Linux
         - android-tools-* in your packages repo
 
 ### Setting Up Your Phone
 
-1. Disable screen sleep
-    - Settings -> Display -> Screen timeout -> never
-2. Disable phone lock
-    - Settings -> Phone lock -> Lock screen -> disable
-3. Enable developer debugging
+1. Enable developer debugging
     - Settings -> Device information -> More information -> Developer
         - Enable 'Remote debugging'
         - Enable 'Console enabled'
+2. Quality of life changes:
+    1. Disable screen sleep
+        - Settings -> Display -> Screen timeout -> never
+    2. Disable phone lock
+        - Settings -> Phone lock -> Lock screen -> disable
+
 
 ### Flashing the Phone
 
