@@ -26,9 +26,36 @@
 4. Get Android Developer Tools
     - Windows or OSX
         - http://developer.android.com/sdk/index.html
-        - On OS X you can download the sdk and add the `package-tools` folders to your path in order to get [adb](http://developer.android.com/tools/help/adb.html). 
+        - On OS X you can download the sdk and add the `package-tools` folders to your `$PATH` in order to get [adb](http://developer.android.com/tools/help/adb.html). 
     - Linux
         - android-tools-* in your packages repo
+
+### Flashing the Phone
+
+To flash the phone, you need to get and setup the latest b2g18.
+
+#### ONLY THE FIRST TIME
+
+1. Get build dependencies
+    - Build process: [Mozilla's B2G build instructions](https://github.com/mozilla-b2g/B2G/blob/master/README.md)
+        - autoconf 2.13 can also be installed by using the [homebrew-versions](https://github.com/Homebrew/homebrew-versions) repo:
+            - `brew tap homebrew/versions`
+            - `brew install homebrew/versions/autoconf213`
+2. Send Corey your **public** key for this to work (same place you get it for github, usually `~/.ssh`)  
+
+        cd path/to/B2G
+        scp nightly@cloud.gnarf.net:b2g18.tgz .
+        
+3. Extract the contents of b2g18.tgz. This will create a dir called `b2g18`, which contains a dir called `out`.
+4. Copy the downloaded and extracted `b2g18/out` dir to your `B2G/` dir:  
+
+        cd path/to/B2G
+        cp -r b2g18/out out
+        
+5. Following the update of b2g18 (download or build), run the following:  
+
+        cd path/to/B2G
+        ./flash.sh
 
 ### Setting Up Your Phone
 
@@ -41,30 +68,6 @@
         - Settings -> Display -> Screen timeout -> never
     2. Disable phone lock
         - Settings -> Phone lock -> Lock screen -> disable
-
-
-### Flashing the Phone
-
-To flash the phone, you need to get and setup the latest b2g18.
-
-0. **ONLY THE FIRST TIME**
-    - Build process: https://github.com/mozilla-b2g/B2G/blob/master/README.md
-    - TODO: write a little script to check for the dependencies
-1. Send Corey your public key for this to work (same place you get it for github, usually `~/.ssh`)  
-
-        cd path/to/B2G
-        scp nightly@cloud.gnarf.net:b2g18.tgz .
-        
-2. Extract the contents of b2g18.tgz. This will create a dir called `b2g18`, which contains a dir called `out`.
-3. Copy the downloaded and extracted `b2g18/out` dir to your `B2G/` dir:  
-
-        cd path/to/B2G
-        cp -r b2g18/out out
-        
-4. Following the update of b2g18 (download or build), run the following:  
-
-        cd path/to/B2G
-        ./flash.sh
 
 ### Deploying and Testing
 
