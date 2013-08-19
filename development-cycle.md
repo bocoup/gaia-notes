@@ -104,11 +104,13 @@ git pull upstream master
     - Security
 
 #### Push change to the phone
+
 ```bash
 make install-gaia APP=clock;
 ```
 
 #### View logging from device!
+
 ```bash
 adb-console;
 ```
@@ -185,6 +187,6 @@ git branch -D busted-r1
     - Save a search for your project:
         - [A sample Gaia Clock search](https://bugzilla.mozilla.org/buglist.cgi?list_id=7648569&columnlist=product%2Ccf_blocking_b2g%2Cbug_status%2Cresolution%2Cshort_desc&resolution=---&query_based_on=CLOCK&query_format=advanced&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&component=Gaia%3A%3AClock&product=Boot2Gecko&known_name=CLOCK)
 3. Keep weekly track of your work
-    - Edit the document at [Mozilla-Notes-August-12-16](https://github.com/bocoup/gaia-internal/wiki/Mozilla-Notes-August-12-16)
+    - Edit the document at [our internal wiki](https://github.com/bocoup/gaia-internal/wiki)
 4. Track Gaia specs
     - Monitor the [Gaia specs](https://mozilla.app.box.com/s/wzgsb3lkqglv0dnfdgzs) page
