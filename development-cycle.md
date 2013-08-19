@@ -148,6 +148,8 @@ Branch names should only be the bug number (ease of remembering and ease of pull
 
 e.g. `git pull rwaldron 12345`
 
+or `git checkout -b 88712 rwaldron/88712` to create a new branch based off that person's current branch
+
 ### Rebasing
 
 Master branch changes constantly (many, many times a day). A patch which could take 2 hours might find master branch changes underneath you.
