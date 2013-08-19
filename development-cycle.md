@@ -8,7 +8,7 @@
         - `git remote add upstream https://github.com/mozilla-b2g/B2G`
         - `git remote add upstream https://github.com/mozilla-b2g/gaia`
     - In gaia, make remotes for bocoup team members
-        - [example script](https://github.com/bocoup/gaia-notes/blob/master/gaia_remotes.sh)
+        - Rick has a [script](https://github.com/bocoup/gaia-notes/blob/master/gaia_remotes.sh) to provide shortcuts, but as repo names are case sensitive your needs (e.g. wanting all lowercase while working) may not fit the script as such.
 2. Download and install Firefox Nightly
     - http://nightly.mozilla.org/
     - Copy your absolute path to the Firefox Nightly application for step 3 below
