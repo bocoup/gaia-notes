@@ -16,16 +16,7 @@
         - Go to the nightly [FTP trunk](https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/)
         - Look for folders ending in "mozilla-central"
         - eg. https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2013-07-19-03-02-04-mozilla-central/
-3. Copy Corey's .dotfiles/b2g.sh
-    - https://github.com/gnarf/.dotfiles/blob/master/b2g.sh
-        - Contains aliases for testing and running gaia in nightly
-    - Make sure to update paths as needed:
-        - check for absolute paths to Firefox Nightly
-        - replace `gnarf` as needed, of course.
-    - Linux Mint: 
-        - add aliases in ~/.bashrc
-    - Don't worry about B2G paths for right now
-4. Get Android Developer Tools
+3. Get Android Developer Tools
     - Windows or OSX
         - http://developer.android.com/sdk/index.html
         - On OS X you can download the sdk and add the `package-tools` folders to your `$PATH` in order to get [adb](http://developer.android.com/tools/help/adb.html). 
@@ -97,7 +88,8 @@ git pull upstream master
         
 6. Launch Firefox Nightly with the newly created debug profile
         
-        gaia-test
+        [/path/to]/firefox -profile [/path/to]/gaia/profile-debug http://test-agent.gaiamobile.org:8080
+
 
 7. This will open FireFox Nightly, displaying the "test-agent"
 8. Open the Console, uncheck the following noisy as hell items
@@ -178,6 +170,18 @@ git branch -D busted-r1
 ```
 
 2b. If conflicts, work them out with the other developer and repeat above
+
+### Useful aliases for debugging/deploying
+
+1. Copy Corey's .dotfiles/b2g.sh
+    - https://github.com/gnarf/.dotfiles/blob/master/b2g.sh
+        - Contains aliases for testing and running gaia in nightly
+    - Make sure to update paths as needed:
+        - check for absolute paths to Firefox Nightly
+        - replace `gnarf` as needed, of course.
+    - Linux Mint: 
+        - add aliases in ~/.bashrc
+    - Don't worry about B2G paths for right now
 
 ### Bugs, IRC, Mozilla Notes progress, etc....
 
