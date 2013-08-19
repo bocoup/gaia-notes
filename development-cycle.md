@@ -22,6 +22,8 @@
     - Make sure to update paths as needed:
         - check for absolute paths to Firefox Nightly
         - replace `gnarf` as needed, of course.
+    - Linux Mint: 
+        - add aliases in ~/.bashrc
     - Don't worry about B2G paths for right now
 4. Get Android Developer Tools
     - Windows or OSX
