@@ -77,6 +77,21 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
     2. Disable phone lock
         - Settings -> Phone lock -> Lock screen -> disable
 
+### Preparing Gaia
+
+Once B2G is flashed, gaia needs to be reset. This only needs to be done _once_ following a freshly flashed B2G build.
+
+1. Reset gaia
+```bash
+cd path/to/gaia;
+make reset-gaia;
+```
+2. Repeat step 1 of [Setting Up Your Phone](https://github.com/bocoup/gaia-notes/blob/master/development-cycle.md#setting-up-your-phone)
+3. Install gaia
+```bash
+make install-gaia;
+```
+
 ### Deploying and Testing
 
 
