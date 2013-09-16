@@ -238,4 +238,52 @@ git branch -D busted-r1
         - add aliases in ~/.bashrc
     - Don't worry about B2G paths for right now
 
+### Making a Pull Request
+
+##################
+After fixing a bug
+##################
+
+### Try to rebase with upstream
+- git checkout -b #####-r1
+- git pull --rebase upstream master
+- git checkout #####
+
+### If rebase doesn't work, from #####-r#
+- Resolve the conflict
+- git add -i the file
+- git rebase --continue
+- git branch -D #####
+- git checkout -b #####
+
+### Stage the relevant files
+- git add -i
+- stage all the relevant files
+
+### Commit and push the relevant files
+- git commit -m "[copy of bug title]"
+- git push
+
+### Create pull request
+- Go to: https://github.com/evhan55/gaia/compare/#####
+- Click "Click to create a pull request for this comparison"
+- Summarize everything you did
+- Pull request will be created here: https://github.com/mozilla-b2g/gaia/pull/@@@@@
+
+### Submit for review
+- Go to: original bug at https://bugzilla.mozilla.org/show_bug.cgi?id=#####
+- Click 'Add an attachment'
+- Paste the github pull request url into first field
+- Paste the github pull request url into second field
+- Paste the summary from above into the 'comment' field
+- Add 'review: ?' flag
+- Choose the person assigned to review it
+- Click "Submit"
+
+### Wait for reviews
+
+### Make changes to a patch and push again
+- git commit -m "[copy of bug title]" --amend
+- git push origin ##### -f
+
 
