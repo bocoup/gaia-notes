@@ -1,3 +1,5 @@
+## SETUP ENVIRONMENT AND PHONE
+
 ### Setting Up Your Environment
 
 1. Fork and clone B2G and gaia
@@ -84,18 +86,36 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 Once B2G is flashed, gaia needs to be reset. This only needs to be done _once_ following a freshly flashed B2G build.
 
 1. Reset gaia
+
 ```bash
 cd path/to/gaia;
 make reset-gaia;
 ```
+
 2. Repeat step 1 of [Setting Up Your Phone](https://github.com/bocoup/gaia-notes/blob/master/development-cycle.md#setting-up-your-phone)
 3. Install gaia
+
 ```bash
 make install-gaia;
 ```
 
-### Deploying and Testing
+## SETUP BUGZILLA, IRC, ETC.
 
+1. Join irc.mozilla.org and join the following channels:
+    - #gaia
+
+2. Join bugzilla
+    - Register at https://bugzilla.mozilla.org/
+    - Save a search for your project:
+        - [A sample Gaia Clock search](https://bugzilla.mozilla.org/buglist.cgi?list_id=7648569&columnlist=product%2Ccf_blocking_b2g%2Cbug_status%2Cresolution%2Cshort_desc&resolution=---&query_based_on=CLOCK&query_format=advanced&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&component=Gaia%3A%3AClock&product=Boot2Gecko&known_name=CLOCK)
+3. Keep weekly track of your work
+    - Edit 'Weekly Progress Notes' at [our internal wiki](https://github.com/bocoup/gaia-internal/wiki)
+4. Track Gaia specs
+    - Monitor the [Gaia specs](https://mozilla.app.box.com/s/wzgsb3lkqglv0dnfdgzs) page
+
+## FIXING BUGS AND MAKING PULL REQUESTS
+
+### Deploying and Testing
 
 #### Grab the latest from master
 
@@ -217,16 +237,4 @@ git branch -D busted-r1
         - add aliases in ~/.bashrc
     - Don't worry about B2G paths for right now
 
-### Bugs, IRC, Mozilla Notes progress, etc....
 
-1. Join irc.mozilla.org and join the following channels:
-    - #gaia
-
-2. Join bugzilla
-    - Register at https://bugzilla.mozilla.org/
-    - Save a search for your project:
-        - [A sample Gaia Clock search](https://bugzilla.mozilla.org/buglist.cgi?list_id=7648569&columnlist=product%2Ccf_blocking_b2g%2Cbug_status%2Cresolution%2Cshort_desc&resolution=---&query_based_on=CLOCK&query_format=advanced&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&component=Gaia%3A%3AClock&product=Boot2Gecko&known_name=CLOCK)
-3. Keep weekly track of your work
-    - Edit 'Weekly Progress Notes' at [our internal wiki](https://github.com/bocoup/gaia-internal/wiki)
-4. Track Gaia specs
-    - Monitor the [Gaia specs](https://mozilla.app.box.com/s/wzgsb3lkqglv0dnfdgzs) page
