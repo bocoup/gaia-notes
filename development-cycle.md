@@ -19,7 +19,7 @@
 3. Get Android Developer Tools
     - Windows or OSX
         - http://developer.android.com/sdk/index.html
-        - On OS X you can download the sdk and add the `package-tools` folders to your `$PATH` in order to get [adb](http://developer.android.com/tools/help/adb.html). 
+        - On OS X you can download the sdk and add the `platform-tools` folders to your `$PATH` in order to get [adb](http://developer.android.com/tools/help/adb.html). 
     - Linux
         - android-tools-* in your packages repo
 
