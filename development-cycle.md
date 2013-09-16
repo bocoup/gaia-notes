@@ -49,7 +49,8 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 
 ##### Steps
         
-1. cd path/to/B2G
+1. Download B2G18 build
+   cd path/to/B2G
    scp nightly@cloud.gnarf.net:b2g18.tgz .
         
 2. Extract the contents of b2g18.tgz. This will create a dir called `b2g18`, which contains a dir called `out`.
