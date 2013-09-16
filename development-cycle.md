@@ -1,4 +1,4 @@
-## SETUP ENVIRONMENT AND PHONE
+## SET UP ENVIRONMENT AND PHONE
 
 ### Setting Up Your Environment
 
@@ -99,7 +99,7 @@ make reset-gaia;
 make install-gaia;
 ```
 
-## SETUP BUGZILLA, IRC, ETC.
+## SET UP BUGZILLA, IRC, ETC.
 
 1. Join irc.mozilla.org and join the following channels:
     - #gaia
