@@ -26,6 +26,9 @@
         - android-tools-* in your packages repo
 4. Download and install the closure linter `gjslint`
     - https://developers.google.com/closure/utilities/docs/linter_howto
+5. Install the node dependencies for the test infrastructure
+    - cd /path/to/gaia/tools/test-agent
+    - npm install
 
 ### Flashing the Phone
 
@@ -152,6 +155,25 @@ git pull upstream master
     - Network
     - CSS
     - Security
+
+#### To run the unit tests for an app from the command line (using Corey's functions from b2g.sh)
+
+1. Start the test agent server
+    - cd /path/to/gaia
+    - make test-agent-server
+
+2. Start an instance of gaia in firefox nightly 
+    - You need to have a debug profile in your firefox for this to run. So if you haven't made one
+        -  cd /path/to/gaia
+        -  DEBUG=1 make
+    - Run the gaia-test-latest function from b2g.sh. You probably want to background this to get your console back
+
+3. Run the unit test
+    - cd /path/to/gaia
+    - gaia-unit APPNAME
+
+The tests will then run. At this point for any failing tests the test server will be watching that file for changes and re-running that test on save.
+If you add a new test file you need to restart the test-server.
 
 #### Push change to the phone
 
