@@ -115,6 +115,7 @@ make install-gaia;
     - Edit 'Weekly Progress Notes' at [our internal wiki](https://github.com/bocoup/gaia-internal/wiki)
 4. Track Gaia specs powerpoints for visual/interaction specifications
     - Monitor the [Gaia specs](https://mozilla.app.box.com/s/wzgsb3lkqglv0dnfdgzs) page
+5. [Weekly Gaia meeting etherpad](https://etherpad.mozilla.org/gaia-meeting-notes)
 
 ## FIXING BUGS AND MAKING PULL REQUESTS
 
