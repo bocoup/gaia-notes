@@ -24,6 +24,8 @@
         - On OS X you can download the sdk and add the `platform-tools` folders to your `$PATH` in order to get [adb](http://developer.android.com/tools/help/adb.html). 
     - Linux
         - android-tools-* in your packages repo
+4. Download and install the closure linter `gjslint`
+    - https://developers.google.com/closure/utilities/docs/linter_howto
 
 ### Flashing the Phone
 
