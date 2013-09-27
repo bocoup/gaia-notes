@@ -79,7 +79,7 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
         cd path/to/B2G
         ./flash.sh
 
-   Or to just build the gecko layer from `m-c`:
+   Or to just build the gecko layer from `m-c`, edit the .config file `GECKO_OBJDIR` value to point to `path/to/B2G` then:
    
         ./flash.sh gecko
 
