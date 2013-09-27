@@ -128,6 +128,7 @@ make install-gaia;
 4. Track Gaia specs powerpoints for visual/interaction specifications
     - Monitor the [Gaia specs](https://mozilla.app.box.com/s/wzgsb3lkqglv0dnfdgzs) page
 5. [Weekly Gaia meeting etherpad](https://etherpad.mozilla.org/gaia-meeting-notes)
+6. Mozilla's performance test utility: [Datazilla](https://datazilla.mozilla.org/)
 
 ## FIXING BUGS AND MAKING PULL REQUESTS
 
