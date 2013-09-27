@@ -48,7 +48,7 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 
 1. Follow the build process at: [Mozilla's B2G build instructions](https://github.com/mozilla-b2g/B2G/blob/master/README.md)
 
-#### (Option 2) Download B2G from gnarf.net
+#### (Option 2) Download B2G (or M-C) from gnarf.net
 
 ##### Prerequesities
 
@@ -56,13 +56,18 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 
 ##### Steps
         
-1. Download B2G18 build
+1a. Download B2G18 build
    
         cd path/to/B2G
         scp nightly@cloud.gnarf.net:b2g18.tgz .
+
+1b. Download M-C (Mozilla Central) build
+
+        cd path/to/B2G
+        scp nightly@cloud.gnarf.net:m-c.tgz .
         
-2. Extract the contents of b2g18.tgz. This will create a dir called `b2g18`, which contains a dir called `out`.
-3. Copy the downloaded and extracted `b2g18/out` dir to your `B2G/` dir:  
+2. Extract the contents of b2g18.tgz (or m-c.tgz). This will create a dir called `b2g18` (or `m-c`), which contains a dir called `out`.
+3. Copy the downloaded and extracted `b2g18/out` (or `m-c/out`) dir to your `B2G/` dir:  
 
         cd path/to/B2G
         cp -r b2g18/out out
@@ -73,6 +78,10 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 
         cd path/to/B2G
         ./flash.sh
+
+   Or to just build the gecko layer:
+   
+        ./flash.sh gecko
 
 ### Setting Up Your Phone
 
