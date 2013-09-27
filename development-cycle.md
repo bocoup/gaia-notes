@@ -66,8 +66,8 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
         cd path/to/B2G
         scp nightly@cloud.gnarf.net:m-c.tgz .
         
-2. Extract the contents of b2g18.tgz (or m-c.tgz). This will create a dir called `b2g18` (or `m-c`), which contains a dir called `out`.
-3. Copy the downloaded and extracted `b2g18/out` (or `m-c/out`) dir to your `B2G/` dir:  
+2. Extract the contents of b2g18.tgz (or m-c.tgz). This will create a dir called `b2g18`, which contains a dir called `out`.  Or, in the case of `m-c`, directly creates an `out` directory.
+3. Copy the downloaded and extracted `b2g18/out` dir to your `B2G/` dir:  
 
         cd path/to/B2G
         cp -r b2g18/out out
@@ -79,7 +79,7 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
         cd path/to/B2G
         ./flash.sh
 
-   Or to just build the gecko layer:
+   Or to just build the gecko layer from `m-c`:
    
         ./flash.sh gecko
 
