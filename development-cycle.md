@@ -86,8 +86,8 @@
 
 ### Flashing the Phone
 
-To flash the phone, you need to get and setup the latest b2g18.
-You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
+To flash the phone, you need to get and setup the latest b2g.
+You can either *build* b2g (optional) or just *download* b2g from gnarf.net
 
 #### (Option 1) Build B2G
 
