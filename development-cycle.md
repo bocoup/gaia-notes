@@ -1,3 +1,38 @@
+## GAIA AND DEVICE VERSIONS
+
+### Gaia
+
+<table>
+  <thead>
+    <tr>
+      <th>Tracking Flag</th>
+      <th>Version</th>
+      <th>Branch</th>
+      <th>Gecko</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>leo+</td>
+      <td>v1.1</td>
+      <td>v1.1</td>
+      <td>gecko 18</td>
+    </tr>  
+    <tr>
+      <td>koi+</td>
+      <td>v1.2</td>
+      <td>v1.2</td>
+      <td>gecko 26</td>
+    </tr>
+    <tr>
+      <td>v1.3+</td>
+      <td>v1.3</td>
+      <td>master</td>
+      <td>gecko latest</td>
+    </tr>    
+  </tbody>
+</table>
+
 ## SET UP ENVIRONMENT AND PHONE
 
 ### Setting Up Your Environment
@@ -55,10 +90,10 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 1. Send Corey your **public** key for this to work (same place you get it for github, usually `~/.ssh`)  
 
 ##### Steps
-
-**Build file name key: (v1.1|v1.2|master)-(unagi|inari).tgz**
         
-1. Download appropriate build tar file for version-phone.tgz
+1. Download appropriate build tar file for (version)-(phone).tgz
+   **Build file name key: (v1.1|v1.2|master)-(unagi|inari).tgz**
+
 ```bash   
 cd path/to/B2G
 scp nightly@cloud.gnarf.net:(version)-(phone).tgz .
