@@ -55,6 +55,8 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 1. Send Corey your **public** key for this to work (same place you get it for github, usually `~/.ssh`)  
 
 ##### Steps
+
+**Nightly build file name key: (v1.1|v1.2|master)-(unagi|inari)**
         
 1a. Download B2G18 build
    
