@@ -48,7 +48,7 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 
 1. Follow the build process at: [Mozilla's B2G build instructions](https://github.com/mozilla-b2g/B2G/blob/master/README.md)
 
-#### (Option 2) Download B2G (or M-C) from gnarf.net
+#### (Option 2) Download appropriate build from gnarf.net
 
 ##### Prerequesities
 
@@ -56,7 +56,7 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 
 ##### Steps
 
-**Nightly build file name key: (v1.1|v1.2|master)-(unagi|inari).tgz**
+**Build file name key: (v1.1|v1.2|master)-(unagi|inari).tgz**
         
 1. Download appropriate build tar file for version-phone.tgz
    
