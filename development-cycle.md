@@ -36,18 +36,18 @@
 <table>
   <thead>
     <tr>
+      <th>Tracking Flag</th>
       <th>Model</th>
-      <th>Tracking Name</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>(the white one)</td>
       <td>unagi</td>
+      <td>(the white one)</td>
     </tr>  
     <tr>
-      <td>ZTEOPEN</td>
       <td>inari</td>
+      <td>ZTEOPEN</td>
     </tr>   
   </tbody>
 </table>
@@ -110,11 +110,11 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
 
 ##### Steps
         
-1. Download appropriate build tar file for (version)-(phone).tgz
+1. Download appropriate build tar file for (b2g-branch)-(device-tracking-flag).tgz
 
 ```bash   
 cd path/to/B2G
-scp nightly@cloud.gnarf.net:(version)-(phone).tgz .
+scp nightly@cloud.gnarf.net:(b2g-branch)-(device-tracking-flag).tgz .
 ```
 Examples: 
 ```bash
@@ -123,10 +123,10 @@ scp nightly@cloud.gnarf.net:v1.2-unagi.tgz .
 scp nightly@cloud.gnarf.net:master-inari.tgz .
 ```
 
-2. Extract the contents of `(version)-(phone).tgz`
+2. Extract the contents of `(b2g-branch)-(device-tracking-flag).tgz`
 
 ```bash         
-tar -zxvf (version)-(phone).tgz
+tar -zxvf (b2g-branch)-(device-tracking-flag).tgz
 ```
 Examples: 
 ```bash 
