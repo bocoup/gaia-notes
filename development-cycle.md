@@ -63,11 +63,9 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
         cd path/to/B2G
         scp nightly@cloud.gnarf.net:(version)-(phone).tgz .
         
-2. Extract the contents of b2g18.tgz (or m-c.tgz). This will create a dir called `b2g18`, which contains a dir called `out`.  Or, in the case of `m-c`, directly creates an `out` directory.
-3. Copy the downloaded and extracted `b2g18/out` dir to your `B2G/` dir:  
-
-        cd path/to/B2G
-        cp -r b2g18/out out
+2. Extract the contents of `(version)-(phone).tgz`
+        
+        tar -zxf (version)-(phone).tgz
 
 #### Flash the phone
 
@@ -78,7 +76,7 @@ Note: You may need to edit the .config file to point the GECKO_OBJDIR to the obj
         cd path/to/B2G
         ./flash.sh
 
-   Or to just build the gecko layer from `m-c`, edit the .config file `GECKO_OBJDIR` value to point to `path/to/B2G` then:
+   Or to just build the gecko layer
    
         ./flash.sh gecko
 
