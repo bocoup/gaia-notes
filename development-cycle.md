@@ -71,7 +71,7 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 
 Note: You may need to edit the .config file to point the GECKO_OBJDIR to the objdir-gecko subfolder in the folder you cloned b2g to.
         
-1. Following the update of b2g18 (download or build), run the following:  
+1. Following the update of B2G (download or build), run the following:  
 
         cd path/to/B2G
         ./flash.sh
