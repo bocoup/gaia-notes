@@ -131,6 +131,8 @@ make install-gaia;
     - Monitor the [Gaia specs](https://mozilla.app.box.com/s/wzgsb3lkqglv0dnfdgzs) page
 5. [Weekly Gaia meeting etherpad](https://etherpad.mozilla.org/gaia-meeting-notes)
 6. Mozilla's performance test utility: [Datazilla](https://datazilla.mozilla.org/)
+7. Join Dev-Gaia
+    - [dev-gaia Google Group](https://groups.google.com/forum/#!forum/mozilla.dev.gaia)
 
 ## FIXING BUGS AND MAKING PULL REQUESTS
 
