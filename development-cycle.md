@@ -56,17 +56,12 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 
 ##### Steps
 
-**Nightly build file name key: (v1.1|v1.2|master)-(unagi|inari)**
+**Nightly build file name key: (v1.1|v1.2|master)-(unagi|inari).tgz**
         
-1a. Download B2G18 build
+1. Download appropriate build tar file for version-phone.tgz
    
         cd path/to/B2G
-        scp nightly@cloud.gnarf.net:b2g18.tgz .
-
-1b. Download M-C (Mozilla Central) build
-
-        cd path/to/B2G
-        scp nightly@cloud.gnarf.net:m-c.tgz .
+        scp nightly@cloud.gnarf.net:(version)-(phone).tgz .
         
 2. Extract the contents of b2g18.tgz (or m-c.tgz). This will create a dir called `b2g18`, which contains a dir called `out`.  Or, in the case of `m-c`, directly creates an `out` directory.
 3. Copy the downloaded and extracted `b2g18/out` dir to your `B2G/` dir:  
