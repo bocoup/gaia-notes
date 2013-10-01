@@ -1,5 +1,3 @@
-## B2G AND DEVICE VERSIONS
-
 ### B2G
 
 <table>
