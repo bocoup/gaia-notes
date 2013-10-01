@@ -110,7 +110,7 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
 
 ##### Steps
         
-1. Download appropriate build tar file for (b2g-branch)-(device-tracking-flag).tgz
+1. Download appropriate build tar file for your needs. Format: `(b2g-branch)-(device-tracking-flag).tgz`.
 
 ```bash   
 cd path/to/B2G
