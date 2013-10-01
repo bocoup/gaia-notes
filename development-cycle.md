@@ -112,7 +112,7 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 
 ##### Steps
         
-1. Download appropriate build tar file for (version)-(phone).tgz
+1. Download appropriate build tar file for (version)-(phone).tgz 
    **Build file name key: (v1.1|v1.2|master)-(unagi|inari).tgz**
 
 ```bash   
@@ -127,6 +127,7 @@ scp nightly@cloud.gnarf.net:master-inari.tgz .
 ```
 
 2. Extract the contents of `(version)-(phone).tgz`
+
 ```bash         
 tar -zxvf (version)-(phone).tgz
 ```
