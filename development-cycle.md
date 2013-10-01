@@ -45,10 +45,10 @@
   <tbody>
     <tr>
       <td>(the white one)</td>
-      <td>ZTEOPEN</td>
+      <td>unagi</td>
     </tr>  
     <tr>
-      <td>unagi</td>
+      <td>ZTEOPEN</td>
       <td>inari</td>
     </tr>   
   </tbody>
