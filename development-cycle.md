@@ -33,6 +33,27 @@
   </tbody>
 </table>
 
+### Device
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Tracking Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(the white one)</td>
+      <td>ZTEOPEN</td>
+    </tr>  
+    <tr>
+      <td>unagi</td>
+      <td>inari</td>
+    </tr>   
+  </tbody>
+</table>
+
 ## SET UP ENVIRONMENT AND PHONE
 
 ### Setting Up Your Environment
