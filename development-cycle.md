@@ -1,6 +1,6 @@
-## GAIA AND DEVICE VERSIONS
+## B2G AND DEVICE VERSIONS
 
-### Gaia
+### B2G
 
 <table>
   <thead>
