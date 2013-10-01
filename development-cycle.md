@@ -1,57 +1,3 @@
-### B2G
-
-<table>
-  <thead>
-    <tr>
-      <th>Tracking Flag</th>
-      <th>Version</th>
-      <th>Branch</th>
-      <th>Gecko</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>leo+</td>
-      <td>v1.1</td>
-      <td>v1.1</td>
-      <td>gecko 18</td>
-    </tr>  
-    <tr>
-      <td>koi+</td>
-      <td>v1.2</td>
-      <td>v1.2</td>
-      <td>gecko 26</td>
-    </tr>
-    <tr>
-      <td>v1.3+</td>
-      <td>v1.3</td>
-      <td>master</td>
-      <td>gecko latest</td>
-    </tr>    
-  </tbody>
-</table>
-
-### Device
-
-<table>
-  <thead>
-    <tr>
-      <th>Tracking Flag</th>
-      <th>Model</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>unagi</td>
-      <td>(the white one)</td>
-    </tr>  
-    <tr>
-      <td>inari</td>
-      <td>ZTEOPEN</td>
-    </tr>   
-  </tbody>
-</table>
-
 ## SET UP ENVIRONMENT AND PHONE
 
 ### Setting Up Your Environment
@@ -88,6 +34,60 @@
 
 To flash the phone, you need to get and setup the latest b2g.
 You can either *build* b2g (optional) or just *download* b2g from gnarf.net
+
+#### B2G Versions
+
+<table>
+  <thead>
+    <tr>
+      <th>Tracking Flag</th>
+      <th>Version</th>
+      <th>Branch</th>
+      <th>Gecko</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>leo+</td>
+      <td>v1.1</td>
+      <td>v1.1</td>
+      <td>gecko 18</td>
+    </tr>  
+    <tr>
+      <td>koi+</td>
+      <td>v1.2</td>
+      <td>v1.2</td>
+      <td>gecko 26</td>
+    </tr>
+    <tr>
+      <td>v1.3+</td>
+      <td>v1.3</td>
+      <td>master</td>
+      <td>gecko latest</td>
+    </tr>    
+  </tbody>
+</table>
+
+#### Device Versions
+
+<table>
+  <thead>
+    <tr>
+      <th>Tracking Flag</th>
+      <th>Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>unagi</td>
+      <td>(the white one)</td>
+    </tr>  
+    <tr>
+      <td>inari</td>
+      <td>ZTEOPEN</td>
+    </tr>   
+  </tbody>
+</table>
 
 #### (Option 1) Build B2G
 
