@@ -65,7 +65,7 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
         
 2. Extract the contents of `(version)-(phone).tgz`
         
-        tar -zxf (version)-(phone).tgz
+        tar -zxvf (version)-(phone).tgz
 
 #### Flash the phone
 
