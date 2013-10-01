@@ -73,7 +73,7 @@ Examples:
         
         tar -zxvf v1.2-unagi.tgz
         
-        tar -zxvf master-unari.tgz
+        tar -zxvf master-inari.tgz
         
         
 
