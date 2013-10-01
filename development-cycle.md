@@ -67,6 +67,16 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
         
         tar -zxvf (version)-(phone).tgz
 
+Examples: 
+
+        tar -zxvf v1.1-unagi.tgz
+        
+        tar -zxvf v1.2-unagi.tgz
+        
+        tar -zxvf master-unari.tgz
+        
+        
+
 #### Flash the phone
 
 Note: You may need to edit the .config file to point the GECKO_OBJDIR to the objdir-gecko subfolder in the folder you cloned b2g to.
