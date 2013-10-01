@@ -59,22 +59,27 @@ You can either *build* b2g18 (optional) or just *download* b2g18 from gnarf.net
 **Build file name key: (v1.1|v1.2|master)-(unagi|inari).tgz**
         
 1. Download appropriate build tar file for version-phone.tgz
-   
-        cd path/to/B2G
-        scp nightly@cloud.gnarf.net:(version)-(phone).tgz .
-        
-2. Extract the contents of `(version)-(phone).tgz`
-        
-        tar -zxvf (version)-(phone).tgz
-
+```bash   
+cd path/to/B2G
+scp nightly@cloud.gnarf.net:(version)-(phone).tgz .
+```
 Examples: 
+```bash
+scp nightly@cloud.gnarf.net:v1.1-unagi.tgz .
+scp nightly@cloud.gnarf.net:v1.2-unagi.tgz .
+scp nightly@cloud.gnarf.net:master-inari.tgz .
+```
 
-        tar -zxvf v1.1-unagi.tgz
-        
-        tar -zxvf v1.2-unagi.tgz
-        
-        tar -zxvf master-inari.tgz
-        
+2. Extract the contents of `(version)-(phone).tgz`
+```bash         
+tar -zxvf (version)-(phone).tgz
+```
+Examples: 
+```bash 
+tar -zxvf v1.1-unagi.tgz
+tar -zxvf v1.2-unagi.tgz
+tar -zxvf master-inari.tgz
+```        
         
 
 #### Flash the phone
