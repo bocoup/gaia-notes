@@ -102,7 +102,7 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
 
 1. Follow the build process at: [Mozilla's B2G build instructions](https://github.com/mozilla-b2g/B2G/blob/master/README.md)
 
-#### (Option 2) Download appropriate build from gnarf.net
+#### (Option 2) Download appropriate build from gnarf.net 
 
 ##### Prerequesities
 
@@ -135,6 +135,103 @@ tar -zxvf v1.2-unagi.tgz
 tar -zxvf master-inari.tgz
 ```        
         
+#### (Option 3) Download appropriate build from mozilla's build servers
+Corey, Mike and Rick have access to mozilla's build server. To get the latest build from 
+mozilla ask one of them to fetch you a zip file of the latest build. When extract the mozilla 
+builds will be extracted into a subfolder (unlike Cory's tgz packaged builds).
+
+#### Mozilla has the following builds
+
+<table>
+  <thead>
+    <tr>
+      <th>Build Name</th>
+      <th>Device</th>
+      <th>Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mozilla-central-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>master</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-central-inari</td><td>ZTEOPEN (inari) [orange phone]</td><td>master</td> -->
+    <!-- </tr> -->
+    <tr>
+      <td>mozilla-central-leo-eng</td><td>ZTE Maxiplus 5 (unagi)</td><td>master</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-central-leo</td><td>ZTE Maxiplus 5 (unagi)</td><td>master</td> -->
+    <!-- </tr> -->
+    <tr>
+      <td>mozilla-central-hamachi-eng</td><td>?</td><td>master</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-central-hamachi</td><td>?</td><td>master</td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+    <!--   <td>mozilla-central-helix</td><td>?</td><td>master</td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+    <!--   <td>mozilla-central-mako</td><td>?</td><td>master</td> -->
+    <!-- </tr> -->
+    <tr>
+      <td>mozilla-aurora-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.2</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-aurora-inari</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.2</td> -->
+    <!-- </tr> -->
+    <tr>
+      <td>mozilla-aurora-leo-eng</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.2</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-aurora-leo</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.2</td> -->
+    <!-- </tr> -->
+    <tr>
+      <td>mozilla-aurora-hamachi-eng</td><td>?</td><td>1.2</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-aurora-hamachi</td><td>?</td><td>1.2</td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+    <!--   <td>mozilla-aurora-helix</td><td>?</td><td>1.2</td> -->
+    <!-- </tr> -->
+    <tr>
+      <td>mozilla-b2g18-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.1</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-b2g18-inari</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.1</td> -->
+    <!-- </tr> -->
+    <tr>
+      <td>mozilla-b2g18-leo-eng</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.1</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-b2g18-leo</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.1</td> -->
+    <!-- </tr> -->
+    <tr>
+      <td>mozilla-b2g18-hamachi-eng</td><td>?</td><td>1.1</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-b2g18-hamachi</td><td>?</td><td>1.1</td> -->
+    <!-- </tr> -->
+    <tr>
+      <td>mozilla-b2g18_v1_0_1-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.0</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-b2g18_v1_0_1-inari</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.0</td> -->
+    <!-- </tr> -->
+    <tr>
+      <td>mozilla-b2g18_v1_0_1-hamachi-eng</td><td>?</td><td>1.0</td>
+    </tr>
+    <!-- <tr> -->
+    <!--   <td>mozilla-b2g18_v1_0_1-hamachi</td><td>?</td><td>1.0</td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+    <!--   <td>mozilla-b2g18_v1_1_0_hd-helix</td><td>?</td><td>1.0</td> -->
+    <!-- </tr> -->
+  </tbody>
+</table> 
+
 
 #### Flash the phone
 
