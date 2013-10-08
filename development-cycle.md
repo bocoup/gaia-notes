@@ -164,10 +164,10 @@ builds will be extracted into a subfolder (unlike Cory's tgz packaged builds).
     <!--   <td>mozilla-central-leo</td><td>ZTE Maxiplus 5 (unagi)</td><td>master</td> -->
     <!-- </tr> -->
     <tr>
-      <td>mozilla-central-hamachi-eng</td><td>?</td><td>master</td>
+      <td>mozilla-central-hamachi-eng</td><td>Alcatel</td><td>master</td>
     </tr>
     <!-- <tr> -->
-    <!--   <td>mozilla-central-hamachi</td><td>?</td><td>master</td> -->
+    <!--   <td>mozilla-central-hamachi</td><td>Alcatel</td><td>master</td> -->
     <!-- </tr> -->
     <!-- <tr> -->
     <!--   <td>mozilla-central-helix</td><td>?</td><td>master</td> -->
@@ -188,10 +188,10 @@ builds will be extracted into a subfolder (unlike Cory's tgz packaged builds).
     <!--   <td>mozilla-aurora-leo</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.2</td> -->
     <!-- </tr> -->
     <tr>
-      <td>mozilla-aurora-hamachi-eng</td><td>?</td><td>1.2</td>
+      <td>mozilla-aurora-hamachi-eng</td><td>Alcatel</td><td>1.2</td>
     </tr>
     <!-- <tr> -->
-    <!--   <td>mozilla-aurora-hamachi</td><td>?</td><td>1.2</td> -->
+    <!--   <td>mozilla-aurora-hamachi</td><td>Alcatel</td><td>1.2</td> -->
     <!-- </tr> -->
     <!-- <tr> -->
     <!--   <td>mozilla-aurora-helix</td><td>?</td><td>1.2</td> -->
@@ -209,10 +209,10 @@ builds will be extracted into a subfolder (unlike Cory's tgz packaged builds).
     <!--   <td>mozilla-b2g18-leo</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.1</td> -->
     <!-- </tr> -->
     <tr>
-      <td>mozilla-b2g18-hamachi-eng</td><td>?</td><td>1.1</td>
+      <td>mozilla-b2g18-hamachi-eng</td><td>Alcatel</td><td>1.1</td>
     </tr>
     <!-- <tr> -->
-    <!--   <td>mozilla-b2g18-hamachi</td><td>?</td><td>1.1</td> -->
+    <!--   <td>mozilla-b2g18-hamachi</td><td>Alcatel</td><td>1.1</td> -->
     <!-- </tr> -->
     <tr>
       <td>mozilla-b2g18_v1_0_1-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.0</td>
@@ -221,10 +221,10 @@ builds will be extracted into a subfolder (unlike Cory's tgz packaged builds).
     <!--   <td>mozilla-b2g18_v1_0_1-inari</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.0</td> -->
     <!-- </tr> -->
     <tr>
-      <td>mozilla-b2g18_v1_0_1-hamachi-eng</td><td>?</td><td>1.0</td>
+      <td>mozilla-b2g18_v1_0_1-hamachi-eng</td><td>Alcatel</td><td>1.0</td>
     </tr>
     <!-- <tr> -->
-    <!--   <td>mozilla-b2g18_v1_0_1-hamachi</td><td>?</td><td>1.0</td> -->
+    <!--   <td>mozilla-b2g18_v1_0_1-hamachi</td><td>Alcatel</td><td>1.0</td> -->
     <!-- </tr> -->
     <!-- <tr> -->
     <!--   <td>mozilla-b2g18_v1_1_0_hd-helix</td><td>?</td><td>1.0</td> -->
