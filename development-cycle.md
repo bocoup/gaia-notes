@@ -80,7 +80,7 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
   <tbody>
     <tr>
       <td>unagi</td>
-      <td>(the white one)</td>
+      <td>ZTE Maxiplus 5</td>
     </tr>  
     <tr>
       <td>inari</td>
