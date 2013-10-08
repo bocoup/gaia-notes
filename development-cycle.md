@@ -102,40 +102,8 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
 
 1. Follow the build process at: [Mozilla's B2G build instructions](https://github.com/mozilla-b2g/B2G/blob/master/README.md)
 
-#### (Option 2) Download appropriate build from gnarf.net 
 
-##### Prerequesities
-
-1. Send Corey your **public** key for this to work (same place you get it for github, usually `~/.ssh`)  
-
-##### Steps
-        
-1. Download appropriate build tar file for your needs. Format: `(b2g-branch)-(device-tracking-flag).tgz`.
-
-```bash   
-cd path/to/B2G
-scp nightly@cloud.gnarf.net:(b2g-branch)-(device-tracking-flag).tgz .
-```
-Examples: 
-```bash
-scp nightly@cloud.gnarf.net:v1.1-unagi.tgz .
-scp nightly@cloud.gnarf.net:v1.2-unagi.tgz .
-scp nightly@cloud.gnarf.net:master-inari.tgz .
-```
-
-2. Extract the contents of `(b2g-branch)-(device-tracking-flag).tgz`
-
-```bash         
-tar -zxvf (b2g-branch)-(device-tracking-flag).tgz
-```
-Examples: 
-```bash 
-tar -zxvf v1.1-unagi.tgz
-tar -zxvf v1.2-unagi.tgz
-tar -zxvf master-inari.tgz
-```        
-        
-#### (Option 3) Download appropriate build from mozilla's build servers
+#### (Option 2) Download appropriate build from mozilla's build servers
 Corey, Mike and Rick have access to mozilla's build server. To get the latest build from 
 mozilla ask one of them to fetch you a zip file of the latest build. When extract the mozilla 
 builds will be extracted into a subfolder (unlike Cory's tgz packaged builds).
