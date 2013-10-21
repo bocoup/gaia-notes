@@ -244,6 +244,15 @@ make reset-gaia;
 make install-gaia;
 ```
 
+### Setting Configurations for Gaia Build
+
+1. Add a `custom-settings.json` file to the `gaia/build` folder and put this gist inside of it: [custom-settings.json](https://gist.github.com/gnarf/469fcae4c60c0517c0f9)
+    - This file configures some gaia settings that make development turn-around times faster:
+        - disables first time user experience (NOFTU=1)
+        - enables remote debugging
+        - etc
+2. Every time you make changes to the `custom-settings.json` file, run `make clean`
+
 ## SET UP BUGZILLA, IRC, ETC.
 
 1. Join irc.mozilla.org and join the following channels:
