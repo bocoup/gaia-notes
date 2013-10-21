@@ -69,3 +69,27 @@ This makes the 'Clock interaction' test in `alarm_panel_test.js` much simpler an
     );
   });
 ```
+
+### Test Setup
+Marionette tests should start with a `marionette` function. This is just a simple wrapper for mocha's suite/describe blocks.
+Dependencies can be required like any other node enviroment. Its worth noting that the `marionette` function has `client` and `plugin` properties
+which can be used for additional functionality in tests.
+
+For more information see the [marionette-js-runner](https://github.com/lightsofapollo/marionette-js-runner#marionette-suitedescribe-like-a-api) documentation.
+
+Example:
+
+```JavaScript
+marionette('Alarm Panel', function() {
+  var assert = require('./lib/assert');
+  var Alarm = require('./lib/alarm');
+  var client = marionette.client();
+  var alarm;
+
+  setup(function() {
+    alarm = new Alarm(client);
+
+    alarm.launch();
+  });
+  //...
+```
