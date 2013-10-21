@@ -327,11 +327,24 @@ git pull upstream master
 The tests will then run. At this point for any failing tests the test server will be watching that file for changes and re-running that test on save.
 If you add a new test file you need to restart the test-server.
 
-#### Push change to the phone
+#### Push app to the phone
 
 ```bash
-make install-gaia APP=clock;
+make install-gaia APP=clock
 ```
+
+#### Push sample user data onto the phone
+
+To push some number of contacts / sms threads to the phone for testing:
+- light = less data
+- heavy = more data
+- xheavy = even more data
+
+```bash
+ make reference-workload-(light|heavy|xheavy) APP=sms
+```
+
+
 
 #### View logging from device!
 
