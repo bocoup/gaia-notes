@@ -244,6 +244,17 @@ make reset-gaia;
 make install-gaia;
 ```
 
+#### Stuck in FTU flow on the ZTE
+If your radio doesn't work on the ZTE sometimes its possible to get stuck in the FTU flow 
+while the device is looking for wireless networks.
+This can be prevent you from getting to the settings to turn on remote debugging.
+If this happens run the following command and restart the device. 
+During startup for a short period, the phone is always reachable by adb.
+
+```bash
+adb wait-for-device ; adb shell stop b2g; NOFTU=1 make reset-gaia
+```
+
 ### Setting Configurations for Gaia Build
 
 1. Add a `custom-settings.json` file to the `gaia/build` folder and put this gist inside of it: [custom-settings.json](https://gist.github.com/gnarf/469fcae4c60c0517c0f9)
