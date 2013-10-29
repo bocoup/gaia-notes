@@ -8,13 +8,15 @@ Marionette's [JavaScript
 module](https://github.com/lightsofapollo/marionette_js_client) runs in a Node
 enviroment and can be used to make issue commands to drive the B2G emulator.
 
-### How to run the marionette integration tests
+### Running the Marionette integration tests
+
+Run all tests:
 
 ```bash
-make test-integration;
+$ make test-integration
 ```
 
-or
+Run specific tests:
 
 ```bash
 ./bin/gaia-marionette path/to/test-file;
