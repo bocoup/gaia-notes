@@ -97,3 +97,15 @@ marionette('Alarm Panel', function() {
   });
   //...
 ```
+
+### Troubleshooting
+
+**Tests are hanging.** If the tests are failing because b2g is "hanging"
+(either on the "Based on Mozilla Technology" splash screen or the "First time
+use" screen), the following steps may resolve the issue (run each from the root
+of the Gaia project):
+
+- Remove the `b2g/` directory so the latest version is fetched:  
+  `$ rm -rf b2g/`
+- Remove and rebuild the "test" profile:  
+  `$ rm -Rf profile-test && make PROFILE_FOLDER=profile-test`
