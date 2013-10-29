@@ -1,20 +1,20 @@
 ## Integration Testing 
 
 Gaia Integration tests use
-[marionette](http://lightsofapollo.github.io/marionette_js_client/api-docs/)
-to drive the B2G emulator and make assertions about the state of the application.
+[marionette](http://lightsofapollo.github.io/marionette_js_client/api-docs/) to
+drive the B2G emulator and make assertions about the state of the application.
 
 Marionette's [JavaScript
-module](https://github.com/lightsofapollo/marionette_js_client) runs
-in a Node enviroment and can be used to make issue commands to drive
-the B2G emulator.
+module](https://github.com/lightsofapollo/marionette_js_client) runs in a Node
+enviroment and can be used to make issue commands to drive the B2G emulator.
 
-### How to run the marionette integration tests:
+### How to run the marionette integration tests
 
 ```bash
 make test-integration;
 ```
-or 
+
+or
 
 ```bash
 ./bin/gaia-marionette path/to/test-file;
@@ -23,6 +23,7 @@ or
 ```
 
 ### Writing your own Marionette Integration Tests
+
 Integration tests typically go in the marionette folder within your apps test folder.
 This folder will tipically contrain your tests files which will all end in `_test.js` and a `/lib` directory. 
 The `/lib` directory contains helper modules that may be required by tests. At a minimum the tests module usually 
@@ -71,6 +72,7 @@ This makes the 'Clock interaction' test in `alarm_panel_test.js` much simpler an
 ```
 
 ### Test Setup
+
 Marionette tests should start with a `marionette` function. This is just a simple wrapper for mocha's suite/describe blocks.
 Dependencies can be required like any other node enviroment. Its worth noting that the `marionette` function has `client` and `plugin` properties
 which can be used for additional functionality in tests.
