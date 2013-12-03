@@ -306,7 +306,7 @@ git pull upstream master
 4. Break something in the file, for example: comment out a big chunk of code
 5. Make a debug profile
 
-        make DEBUG=1
+        DESKTOP_SHIMS=1 NOFTU=1 DEBUG=1 make
         
 6. Launch Firefox Nightly with the newly created debug profile
         
@@ -328,7 +328,7 @@ git pull upstream master
 2. Start an instance of gaia in firefox nightly 
     - You need to have a debug profile in your firefox for this to run. So if you haven't made one
         -  cd /path/to/gaia
-        -  DEBUG=1 make
+        -  DESKTOP_SHIMS=1 NOFTU=1 DEBUG=1 make
     - Run the gaia-test-latest function from b2g.sh. You probably want to background this to get your console back
 
 3. Run the unit test
