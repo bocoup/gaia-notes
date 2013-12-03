@@ -240,7 +240,10 @@ adb wait-for-device ; adb shell stop b2g; NOFTU=1 make reset-gaia
         - etc
 2. Every time you make changes to the `custom-settings.json` file, run `make clean`
 
-#### Push app to the phone
+#### Push a specific app to the phone
+
+Use the `APP` environmental variable. For instance, to push only Clock to the
+phone, run:
 
 ```bash
 make install-gaia APP=clock
