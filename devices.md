@@ -22,7 +22,7 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
       <td>v1.1</td>
       <td>v1.1</td>
       <td>gecko 18</td>
-    </tr>  
+    </tr>
     <tr>
       <td>koi+</td>
       <td>v1.2</td>
@@ -34,7 +34,7 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
       <td>v1.3</td>
       <td>master</td>
       <td>gecko latest</td>
-    </tr>    
+    </tr>
   </tbody>
 </table>
 
@@ -51,11 +51,11 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
     <tr>
       <td>unagi</td>
       <td>ZTE Maxiplus 5</td>
-    </tr>  
+    </tr>
     <tr>
       <td>inari</td>
       <td>ZTEOPEN</td>
-    </tr>   
+    </tr>
   </tbody>
 </table>
 
@@ -63,8 +63,10 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
 
 ##### Prerequisites
 
-1. Get build dependencies as listed at: [Mozilla's B2G build instructions](https://github.com/mozilla-b2g/B2G/blob/master/README.md)
-    - autoconf 2.13 can also be installed by using the [homebrew-versions](https://github.com/Homebrew/homebrew-versions) repo:
+1. Get build dependencies as listed at: [Mozilla's B2G build
+   instructions](https://github.com/mozilla-b2g/B2G/blob/master/README.md)
+    - On OSX, autoconf 2.13 can also be installed by using the
+      [homebrew-versions](https://github.com/Homebrew/homebrew-versions) repo:
         - `brew tap homebrew/versions`
         - `brew install homebrew/versions/autoconf213`
 
@@ -74,9 +76,11 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
 
 
 #### (Option 2) Download appropriate build from mozilla's build servers
-Corey, Mike and Rick have access to mozilla's build server. To get the latest build from 
-mozilla ask one of them to fetch you a zip file of the latest build. When extract the mozilla 
-builds will be extracted into a subfolder (unlike Cory's tgz packaged builds).
+
+Corey, Mike and Rick have access to mozilla's build server. To get the latest
+build from mozilla ask one of them to fetch you a zip file of the latest build.
+When extract the mozilla builds will be extracted into a subfolder (unlike
+Cory's tgz packaged builds).
 
 #### Mozilla has the following builds
 
@@ -168,20 +172,21 @@ builds will be extracted into a subfolder (unlike Cory's tgz packaged builds).
     <!--   <td>mozilla-b2g18_v1_1_0_hd-helix</td><td>?</td><td>1.0</td> -->
     <!-- </tr> -->
   </tbody>
-</table> 
+</table>
 
 
 #### Flash the phone
 
-Note: You may need to edit the .config file to point the GECKO_OBJDIR to the objdir-gecko subfolder in the folder you cloned b2g to.
-        
-1. Following the update of B2G (download or build), run the following:  
+Note: You may need to edit the .config file to point the GECKO_OBJDIR to the
+objdir-gecko subfolder in the folder you cloned b2g to.
+
+1. Following the update of B2G (download or build), run the following:
 
         cd path/to/B2G
         ./flash.sh
 
    Or to just build the gecko layer
-   
+
         ./flash.sh gecko
 
 ### Setting Up Your Phone
@@ -215,10 +220,11 @@ make install-gaia;
 ```
 
 #### Stuck in FTU flow on the ZTE
-If your radio doesn't work on the ZTE sometimes its possible to get stuck in the FTU flow 
+
+If your radio doesn't work on the ZTE sometimes its possible to get stuck in the FTU flow
 while the device is looking for wireless networks.
 This can be prevent you from getting to the settings to turn on remote debugging.
-If this happens run the following command and restart the device. 
+If this happens run the following command and restart the device.
 During startup for a short period, the phone is always reachable by adb.
 
 ```bash
@@ -264,7 +270,7 @@ adb-console;
         touch shared/js/serialize.js
 
 2. Put this inside:
-    
+
         function serialize(object, omission) {
           var o = {};
           if (Array.isArray(object)) {
@@ -278,7 +284,7 @@ adb-console;
           }
           return JSON.stringify(o);
         }
-        
+
         function log(object, omission) {
           console.log(serialize(object, omission));
         }
@@ -288,5 +294,3 @@ adb-console;
 
         var o = { foo: [1,2,3,4], bar: document.createElement('div') };
         log(o, ['bar']);
-
-
