@@ -313,7 +313,7 @@ git pull upstream master
         [/path/to]/firefox -profile [/path/to]/gaia/profile-debug http://test-agent.gaiamobile.org:8080
 
 7. This will open FireFox Nightly, displaying the "test-agent"
-    - if you want to see a specific app (e.g. clock), type `clock.gaigamobile.org:8080` into the url bar
+    - if you want to see a specific app (e.g. clock), type `clock.gaiamobile.org:8080` into the url bar
 8. Open the Console, uncheck the following noisy as hell items
     - Network
     - CSS
