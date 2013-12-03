@@ -219,13 +219,15 @@ make reset-gaia;
 make install-gaia;
 ```
 
+### Troubleshooting
+
 #### Stuck in FTU flow on the ZTE
 
-If your radio doesn't work on the ZTE sometimes its possible to get stuck in the FTU flow
-while the device is looking for wireless networks.
-This can be prevent you from getting to the settings to turn on remote debugging.
-If this happens run the following command and restart the device.
-During startup for a short period, the phone is always reachable by adb.
+If your radio doesn't work on the ZTE sometimes its possible to get stuck in
+the FTU flow while the device is looking for wireless networks.  This can be
+prevent you from getting to the settings to turn on remote debugging.  If this
+happens run the following command and restart the device.  During startup for a
+short period, the phone is always reachable by adb.
 
 ```bash
 adb wait-for-device ; adb shell stop b2g; NOFTU=1 make reset-gaia
