@@ -233,6 +233,36 @@ short period, the phone is always reachable by adb.
 adb wait-for-device ; adb shell stop b2g; NOFTU=1 make reset-gaia
 ```
 
+#### Device not listed by `adb devices`
+
+The simplest solution is to re-flash the device by entering "fastboot mode".
+The process for booting the phone in this mode varies by device, but in
+many cases you simply press and hold the "Volume Down" button and "Power
+Button". When the device restarts, continue to hold the "Volume Down" button
+until the splash screen is visible. Next, run:
+
+```shell
+$ fastboot devices
+```
+
+If this lists your device, you may now flash the device.
+
+#### Device not listed by `fastboot devices` when in Fastboot mode
+
+In rare cases, devices may enter a state where they disable remote debugging
+very shortly after startup, but do not continue to load Gaia. To fix this
+problem, you may be able to connect via adb and prevent b2g from disabling
+remote debugging during the startup phase. Run the following command:
+
+```shell
+$ adb wait-for-device && adb shell stop b2g
+```
+
+...and then reboot your device. The script should connect to the device in the
+brief window where remote debugging connections are accepted and prevent b2g
+from disabling remote debugging. Now the device should be listed by `adb
+devices`.
+
 ### Setting Configurations for Gaia Build
 
 1. Add a `custom-settings.json` file to the `gaia/build` folder and put this gist inside of it: [custom-settings.json](https://gist.github.com/gnarf/469fcae4c60c0517c0f9)
