@@ -209,14 +209,14 @@ Once B2G is flashed, gaia needs to be reset. This only needs to be done _once_ f
 
 ```bash
 cd path/to/gaia;
-make reset-gaia;
+make reset-gaia REMOTE_DEBUGGER=1;
 ```
 
 2. Repeat step 1 of [Setting Up Your Phone](https://github.com/bocoup/gaia-notes/blob/master/development-cycle.md#setting-up-your-phone)
 3. Install gaia
 
 ```bash
-make install-gaia;
+make install-gaia REMOTE_DEBUGGER=1;
 ```
 
 ### Troubleshooting
@@ -230,7 +230,7 @@ happens run the following command and restart the device.  During startup for a
 short period, the phone is always reachable by adb.
 
 ```bash
-adb wait-for-device ; adb shell stop b2g; NOFTU=1 make reset-gaia
+adb wait-for-device ; adb shell stop b2g; NOFTU=1 make reset-gaia REMOTE_DEBUGGER=1;
 ```
 
 #### Device not listed by `adb devices`
