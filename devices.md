@@ -209,14 +209,14 @@ Once B2G is flashed, gaia needs to be reset. This only needs to be done _once_ f
 
 ```bash
 cd path/to/gaia;
-make reset-gaia REMOTE_DEBUGGER=1;
+make REMOTE_DEBUGGER=1 reset-gaia;
 ```
 
 2. Repeat step 1 of [Setting Up Your Phone](https://github.com/bocoup/gaia-notes/blob/master/development-cycle.md#setting-up-your-phone)
 3. Install gaia
 
 ```bash
-make install-gaia REMOTE_DEBUGGER=1;
+make REMOTE_DEBUGGER=1 install-gaia;
 ```
 
 ### Troubleshooting
