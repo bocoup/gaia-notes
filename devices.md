@@ -97,7 +97,7 @@ Cory's tgz packaged builds).
       <td>mozilla-central-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>master</td>
     </tr>
     <tr>
-      <td>mozilla-central-leo-eng</td><td>ZTE Maxiplus 5 (unagi)</td><td>master</td>
+      <td>mozilla-central-leo-eng</td><td>ZTE Maxiplus 5</td><td>master</td>
     </tr>
     <tr>
       <td>mozilla-central-hamachi-eng</td><td>Alcatel</td><td>master</td>
@@ -106,7 +106,7 @@ Cory's tgz packaged builds).
       <td>mozilla-aurora-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.2</td>
     </tr>
     <tr>
-      <td>mozilla-aurora-leo-eng</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.2</td>
+      <td>mozilla-aurora-leo-eng</td><td>ZTE Maxiplus 5</td><td>1.2</td>
     </tr>
     <tr>
       <td>mozilla-aurora-hamachi-eng</td><td>Alcatel</td><td>1.2</td>
@@ -115,7 +115,7 @@ Cory's tgz packaged builds).
       <td>mozilla-b2g18-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.1</td>
     </tr>
     <tr>
-      <td>mozilla-b2g18-leo-eng</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.1</td>
+      <td>mozilla-b2g18-leo-eng</td><td>ZTE Maxiplus 5</td><td>1.1</td>
     </tr>
     <tr>
       <td>mozilla-b2g18-hamachi-eng</td><td>Alcatel</td><td>1.1</td>
