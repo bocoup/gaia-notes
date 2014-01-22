@@ -45,16 +45,27 @@ You can either *build* b2g (optional) or just *download* b2g from gnarf.net
     <tr>
       <th>Tracking Flag</th>
       <th>Model</th>
+      <th>Color</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>unagi</td>
       <td>ZTE Maxiplus 5</td>
+      <td>white</td>
     </tr>
     <tr>
       <td>inari</td>
       <td>ZTEOPEN</td>
+      <td>
+          orange (retail US), blue (Movistar in South America), or black
+          (developer devices)
+      </td>
+    </tr>
+    <tr>
+      <td>hamachi</td>
+      <td>Alcatel One Touch Fire</td>
+      <td>orange & white</td>
     </tr>
   </tbody>
 </table>
@@ -94,83 +105,38 @@ Cory's tgz packaged builds).
   </thead>
   <tbody>
     <tr>
-      <td>mozilla-central-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>master</td>
+      <td>mozilla-central-inari-eng</td><td>ZTEOPEN</td><td>master</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-central-inari</td><td>ZTEOPEN (inari) [orange phone]</td><td>master</td> -->
-    <!-- </tr> -->
     <tr>
-      <td>mozilla-central-leo-eng</td><td>ZTE Maxiplus 5 (unagi)</td><td>master</td>
+      <td>mozilla-central-leo-eng</td><td>LG Fireweb</td><td>master</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-central-leo</td><td>ZTE Maxiplus 5 (unagi)</td><td>master</td> -->
-    <!-- </tr> -->
     <tr>
-      <td>mozilla-central-hamachi-eng</td><td>Alcatel</td><td>master</td>
+      <td>mozilla-central-hamachi-eng</td><td>Alcatel One Touch Fire</td><td>master</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-central-hamachi</td><td>Alcatel</td><td>master</td> -->
-    <!-- </tr> -->
-    <!-- <tr> -->
-    <!--   <td>mozilla-central-helix</td><td>?</td><td>master</td> -->
-    <!-- </tr> -->
-    <!-- <tr> -->
-    <!--   <td>mozilla-central-mako</td><td>?</td><td>master</td> -->
-    <!-- </tr> -->
     <tr>
-      <td>mozilla-aurora-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.2</td>
+      <td>mozilla-aurora-inari-eng</td><td>ZTEOPEN</td><td>1.2</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-aurora-inari</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.2</td> -->
-    <!-- </tr> -->
     <tr>
-      <td>mozilla-aurora-leo-eng</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.2</td>
+      <td>mozilla-aurora-leo-eng</td><td>LG Fireweb</td><td>1.2</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-aurora-leo</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.2</td> -->
-    <!-- </tr> -->
     <tr>
-      <td>mozilla-aurora-hamachi-eng</td><td>Alcatel</td><td>1.2</td>
+      <td>mozilla-aurora-hamachi-eng</td><td>Alcatel One Touch Fire</td><td>1.2</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-aurora-hamachi</td><td>Alcatel</td><td>1.2</td> -->
-    <!-- </tr> -->
-    <!-- <tr> -->
-    <!--   <td>mozilla-aurora-helix</td><td>?</td><td>1.2</td> -->
-    <!-- </tr> -->
     <tr>
-      <td>mozilla-b2g18-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.1</td>
+      <td>mozilla-b2g18-inari-eng</td><td>ZTEOPEN</td><td>1.1</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-b2g18-inari</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.1</td> -->
-    <!-- </tr> -->
     <tr>
-      <td>mozilla-b2g18-leo-eng</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.1</td>
+      <td>mozilla-b2g18-leo-eng</td><td>LG Fireweb</td><td>1.1</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-b2g18-leo</td><td>ZTE Maxiplus 5 (unagi)</td><td>1.1</td> -->
-    <!-- </tr> -->
     <tr>
-      <td>mozilla-b2g18-hamachi-eng</td><td>Alcatel</td><td>1.1</td>
+      <td>mozilla-b2g18-hamachi-eng</td><td>Alcatel One Touch Fire</td><td>1.1</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-b2g18-hamachi</td><td>Alcatel</td><td>1.1</td> -->
-    <!-- </tr> -->
     <tr>
-      <td>mozilla-b2g18_v1_0_1-inari-eng</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.0</td>
+      <td>mozilla-b2g18_v1_0_1-inari-eng</td><td>ZTEOPEN</td><td>1.0</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-b2g18_v1_0_1-inari</td><td>ZTEOPEN (inari) [orange phone]</td><td>1.0</td> -->
-    <!-- </tr> -->
     <tr>
-      <td>mozilla-b2g18_v1_0_1-hamachi-eng</td><td>Alcatel</td><td>1.0</td>
+      <td>mozilla-b2g18_v1_0_1-hamachi-eng</td><td>Alcatel One Touch Fire</td><td>1.0</td>
     </tr>
-    <!-- <tr> -->
-    <!--   <td>mozilla-b2g18_v1_0_1-hamachi</td><td>Alcatel</td><td>1.0</td> -->
-    <!-- </tr> -->
-    <!-- <tr> -->
-    <!--   <td>mozilla-b2g18_v1_1_0_hd-helix</td><td>?</td><td>1.0</td> -->
-    <!-- </tr> -->
   </tbody>
 </table>
 
